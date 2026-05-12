@@ -9,19 +9,38 @@
   --radius-md: 1rem;
   --max-width: 72rem;
   --space: 1rem;
+  --space-sm: 0.75rem;
+  --space-xl: 2rem;
 }
 
 * {
   box-sizing: border-box;
 }
 
-/* Uso de tipografía fluida con clamp  en el font-size */
+/* Uso de tipografía fluida con clamp en el font-size */
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
-  font-size: clamp(1rem, 0.3vw + 0.95rem, 1.125rem);
+  font-size: clamp(0.75rem, 1vw + 0.6rem, 1.125rem);
   line-height: 1.5;
   color: var(--color-texto);
+}
+
+header,
+footer {
+  background: var(--color-secundario);
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
 }
 
 img {
@@ -69,11 +88,6 @@ textarea:focus-visible {
   padding: var(--space);
 }
 
-header,
-footer {
-  background: var(--color-secundario);
-}
-
 .nav-principal ul {
   list-style: none;
   padding: 0;
@@ -101,18 +115,6 @@ footer {
   background: var(--color-primario);
   color: #ffffff;
   border-color: var(--color-primario);
-}
-
-h1 {
-  font-size: clamp(1.8rem, 3vw + 1rem, 2.5rem);
-}
-
-h2 {
-  font-size: clamp(1.4rem, 2vw + 1rem, 2rem);
-}
-
-h3 {
-  font-size: clamp(1.1rem, 1vw + 1rem, 1.4rem);
 }
 
 .cards {
@@ -163,6 +165,40 @@ h3 {
   font-weight: bold;
 }
 /* fin migas */
+
+.tabla-section {
+  margin-top: var(--space-xl);
+}
+
+.tabla-responsive {
+  overflow-x: auto;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radius-md);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+caption {
+  padding: var(--space-sm);
+  font-weight: 700;
+  text-align: left;
+}
+
+th,
+td {
+  padding: var(--space-sm);
+  border-top: 1px solid var(--color-borde);
+  text-align: left;
+  vertical-align: top;
+}
+
+thead th {
+  background: var(--color-secundario);
+}
 
 .formulario {
   margin: auto;
@@ -228,7 +264,7 @@ small {
   margin-right: 0.5rem;
 }
 
-/* Media Querys: El estilo principal esta hecho para mobile first
+/* Media Queries: El estilo principal esta hecho para mobile first
 * acá se da estilo especial para tablet y escritorio */
 /* Tablet */
 @media (min-width: 48rem) { 

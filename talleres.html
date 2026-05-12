@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CCLA | Talleres</title>
     <meta name="description" content="Listado de talleres del Centro Cultural Los Arrayanes." />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
@@ -32,8 +32,8 @@
         </ol>
       </nav>
 
-      <section>
-        <h2>Listado de actividades</h2>
+      <section aria-labelledby="titulo-actividades">
+        <h2 id="titulo-actividades">Listado de actividades</h2>
 
         <div class="cards">
           <article class="card">
@@ -77,6 +77,44 @@
         </div>
 
         <p><a href="inscripciones.html">Ir al formulario para postular a un taller</a></p>
+      </section>
+
+      <section aria-labelledby="titulo-tabla-horarios" class="tabla-section">
+        <h2 id="titulo-tabla-horarios">Resumen de horarios</h2>
+        <div class="tabla-responsive">
+          <!-- Tabla -->
+          <table id="tabla-horarios">
+            <caption>Horarios y cupos de los talleres del Centro Cultural Los Arrayanes</caption>
+            <thead>
+              <tr>
+                <th scope="col">Taller</th>
+                <th scope="col">Día</th>
+                <th scope="col">Horario</th>
+                <th scope="col">Cupos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Pintura Inicial</th>
+                <td>Lunes</td>
+                <td>18:00 a 19:30</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <th scope="row">Teatro</th>
+                <td>Miércoles</td>
+                <td>17:00 a 18:30</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <th scope="row">Yoga y Bienestar</th>
+                <td>Viernes</td>
+                <td>10:00 a 11:30</td>
+                <td>18</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
     </main>
 
