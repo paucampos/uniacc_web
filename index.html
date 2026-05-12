@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CCLA | Inicio</title>
+    <meta name="description" content="Centro Cultural Los Arrayanes: cartelera del mes, talleres e inscripciones." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- skip link aparecer al presionar tab -->
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+    <!-- Etiqueta semantica header -->
+    <header>
+      <div class="container">
+        <h1>Centro Cultural Los Arrayanes</h1>
+        <p>Sitio informativo de talleres y eventos comunitarios.</p>
+
+        <nav class="nav-principal" aria-label="Principal">
+          <ul>
+            <li><a href="index.html" aria-current="page">Ir a inicio</a></li>
+            <li><a href="talleres.html">Ver talleres disponibles</a></li>
+            <li><a href="inscripciones.html">Ir al formulario de inscripción</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Etiqueta semantica main -->
+    <main id="contenido">
+      <section class="container hero">
+        <div>
+          <h2>Bienvenidos al CCLA</h2>
+          <p>
+            El Centro Cultural Los Arrayanes ofrece talleres y actividades para fortalecer la participación comunitaria y el acceso a
+            espacios de aprendizaje.
+          </p>
+          <p><a href="talleres.html">Conocer la cartelera del mes</a></p>
+        </div>
+
+        <picture>
+          <source media="(min-width: 48rem)" srcset="assets/img/centro-cultural-800.jpg 800w" />
+          <img
+            src="assets/img/centro-cultural-400.jpg"
+            srcset="assets/img/centro-cultural-400.jpg 400w, assets/img/centro-cultural-800.jpg 800w"
+            sizes="(min-width: 48rem) 50vw, 100vw"
+            alt="Sala comunitaria del Centro Cultural Los Arrayanes"
+          />
+        </picture>
+      </section>
+
+      <section class="container">
+        <h2>Cartelera del mes</h2>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Taller de Pintura Inicial</h3>
+            <img
+              src="assets/img/pintura-400.jpg"
+              srcset="assets/img/pintura-400.jpg 400w, assets/img/pintura-600.jpg 600w"
+              sizes="(min-width: 48rem) 50vw, 100vw"
+              alt="Pincel en pintura acrílica"
+            >
+            <p>Actividad orientada a personas que desean iniciarse en técnicas básicas de pintura.</p>
+            <p><a href="talleres.html">Ver detalles del Taller de Pintura Inicial</a></p>
+          </article>
+
+          <article class="card">
+            <h3>Taller de Teatro</h3>
+            <img
+              src="assets/img/teatro-400.jpg"
+              srcset="assets/img/teatro-400.jpg 400w, assets/img/teatro-800.jpg 800w"
+              sizes="(min-width: 48rem) 50vw, 100vw"
+              alt="Niños en teatro"
+            >
+            <p>Espacio participativo para desarrollar expresión corporal y trabajo en equipo.</p>
+            <p><a href="talleres.html">Revisar información del Taller de Teatro</a></p>
+          </article>
+
+          <article class="card">
+            <h3>Taller de Yoga y Bienestar</h3>
+            <img
+              src="assets/img/yoga-400.jpg"
+              srcset="assets/img/yoga-400.jpg 400w, assets/img/yoga-800.jpg 800w"
+              sizes="(min-width: 48rem) 50vw, 100vw"
+              alt="Mujeres en posición de yoga"
+            >
+            <p>Sesiones enfocadas en respiración, movilidad y relajación para la comunidad.</p>
+            <p><a href="talleres.html">Conocer el Taller de Yoga y Bienestar</a></p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Etiqueta semantica footer -->
+    <footer>
+      <div class="container">
+        <p><small>© 2026 Centro Cultural Los Arrayanes</small></p>
+      </div>
+    </footer>
+  </body>
+</html>

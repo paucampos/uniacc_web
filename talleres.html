@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CCLA | Talleres</title>
+    <meta name="description" content="Listado de talleres del Centro Cultural Los Arrayanes." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+    <header>
+      <div class="container">
+        <h1>Talleres del CCLA</h1>
+        <nav class="nav-principal" aria-label="Principal">
+          <ul>
+            <li><a href="index.html">Ir a inicio</a></li>
+            <li><a href="talleres.html" aria-current="page">Ver talleres disponibles</a></li>
+            <li><a href="inscripciones.html">Ir al formulario de inscripción</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido" class="container">
+      <!-- Migas -->
+      <nav aria-label="Ruta de navegación" class="breadcrumb">
+        <ol>
+          <li><a href="index.html">Inicio</a></li>
+          <li aria-current="page">Talleres</li>
+        </ol>
+      </nav>
+
+      <section>
+        <h2>Listado de actividades</h2>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Taller de Pintura Inicial</h3>
+            <img
+              src="assets/img/pintura-400.jpg"
+              srcset="assets/img/pintura-400.jpg 400w, assets/img/pintura-600.jpg 600w"
+              sizes="(min-width: 48rem) 50vw, 100vw"
+              alt="Pincel en pintura acrílica"
+            >
+            <p><strong>Día:</strong> Lunes</p>
+            <p><strong>Horario:</strong> 18:00 a 19:30</p>
+            <p>Taller introductorio para aprender color, composición y técnicas básicas.</p>
+          </article>
+
+          <article class="card">
+            <h3>Taller de Teatro</h3>
+            <img
+              src="assets/img/teatro-400.jpg"
+              srcset="assets/img/teatro-400.jpg 400w, assets/img/teatro-800.jpg 800w"
+              sizes="(min-width: 48rem) 50vw, 100vw"
+              alt="Niños en teatro"
+            >
+            <p><strong>Día:</strong> Miércoles</p>
+            <p><strong>Horario:</strong> 17:00 a 18:30</p>
+            <p>Actividad grupal orientada al desarrollo de expresión corporal y creatividad.</p>
+          </article>
+
+          <article class="card">
+            <h3>Taller de Yoga y Bienestar</h3>
+            <img
+              src="assets/img/yoga-400.jpg"
+              srcset="assets/img/yoga-400.jpg 400w, assets/img/yoga-800.jpg 800w"
+              sizes="(min-width: 48rem) 50vw, 100vw"
+              alt="Mujeres en posición de yoga"
+            >
+            <p><strong>Día:</strong> Viernes</p>
+            <p><strong>Horario:</strong> 10:00 a 11:30</p>
+            <p>Espacio para trabajar respiración, movilidad y relajación en comunidad.</p>
+          </article>
+        </div>
+
+        <p><a href="inscripciones.html">Ir al formulario para postular a un taller</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p><small>© 2026 Centro Cultural Los Arrayanes</small></p>
+      </div>
+    </footer>
+  </body>
+</html>

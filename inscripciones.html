@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CCLA | Inscripciones</title>
+    <meta name="description" content="Formulario de inscripción a talleres del Centro Cultural Los Arrayanes." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+    <header>
+      <div class="container">
+        <h1>Inscripciones a talleres</h1>
+        <nav class="nav-principal" aria-label="Principal">
+          <ul>
+            <li><a href="index.html">Ir a inicio</a></li>
+            <li><a href="talleres.html">Ver talleres disponibles</a></li>
+            <li><a href="inscripciones.html" aria-current="page">Ir al formulario de inscripción</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido" class="container">
+      <nav aria-label="Ruta de navegación" class="breadcrumb">
+        <ol>
+          <li><a href="index.html">Inicio</a></li>
+          <li aria-current="page">Inscripciones</li>
+        </ol>
+      </nav>
+
+      <section class="formulario">
+        <h2>Formulario de postulación</h2>
+        <p>Complete los siguientes datos para postular a uno de los talleres del centro cultural.</p>
+
+        <form id="formulario" action="#" method="post">
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <!-- Campo de texto -->
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" aria-describedby="ayuda-nombre error-nombre" />
+            <small id="ayuda-nombre">Ingrese su nombre y apellido.</small>
+            <!-- Error estatico -->
+            <small id="error-nombre" class="error">Este campo es obligatorio.</small>
+          </div>
+
+          <div class="form-group">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" placeholder="Ej: nombre@correo.com" aria-describedby="ayuda-correo error-correo" />
+            <small id="ayuda-correo">Ingrese su correo electrónico.</small>
+            <small id="error-correo" class="error">Ingrese un correo válido.</small>
+          </div>
+
+          <fieldset class="form-group">
+            <legend>Seleccione jornada</legend>
+            <small>Elija el horario de preferencia.</small>
+            <div class="radio-group">
+              <!-- Control de selección -->
+              <label for="manana"><input type="radio" id="manana" name="jornada" value="manana" /> Mañana</label>
+              <label for="tarde"><input type="radio" id="tarde" name="jornada" value="tarde" /> Tarde</label>
+            </div>
+            <small class="error">Seleccione una jornada.</small>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="taller">Seleccione un taller</label>
+            <!-- Área de selección -->
+            <select id="taller" name="taller" aria-describedby="ayuda-taller error-taller">
+              <option value="">Seleccione una opción</option>
+              <option value="pintura">Taller de Pintura Inicial</option>
+              <option value="teatro">Taller de Teatro</option>
+              <option value="yoga">Taller de Yoga y Bienestar</option>
+            </select>
+            <small id="ayuda-taller">Seleccione el taller al que desea postular.</small>
+            <small id="error-taller" class="error">Debe elegir un taller.</small>
+            </div>
+
+            <div class="form-group">
+            <button type="submit">Enviar inscripción</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p><small>© 2026 Centro Cultural Los Arrayanes</small></p>
+      </div>
+    </footer>
+  </body>
+</html>
